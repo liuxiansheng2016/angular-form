@@ -2,7 +2,7 @@
 .form-input {
     @include margin(1, 0);
     &-field {
-        @include padding(1);
+        @include padding(1, 0);
         border: none;
         border-bottom: 1px solid var(--form-fields-label-gray);
         background: none;
