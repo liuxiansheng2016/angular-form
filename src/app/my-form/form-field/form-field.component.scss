@@ -1,0 +1,16 @@
+.form-field-container {
+    .label {
+        color: var(--form-fields-label-gray);
+    }
+    .form-select-label {
+        margin-right: 16px;
+    }
+    .nested-group,
+    .nested-array {
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    .nested-field {
+        margin-left: 10px;
+    }
+}

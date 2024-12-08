@@ -1,0 +1,17 @@
+@import "../minxins/mixins-margin-padding";
+.form-input {
+    @include margin(1, 0);
+    &-field {
+        @include padding(1);
+        border: none;
+        border-bottom: 1px solid var(--form-fields-label-gray);
+        background: none;
+        font-size: inherit;
+        color: currentColor;
+        width: 100%;
+        &:focus {
+            outline: none;
+            border-bottom: 2px solid var(--form-fields-outline-border-primary);
+        }
+    }
+}

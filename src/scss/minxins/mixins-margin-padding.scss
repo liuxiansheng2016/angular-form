@@ -1,0 +1,45 @@
+@mixin padding($topLevel, $rightLevel: null, $bottomLevel: null, $leftLevel: null) {
+    @if $topLevel !=null and $rightLevel==null and $bottomLevel==null and $leftLevel==null {
+        padding: calc(#{$topLevel} * var(--standard-padding));
+    }
+    @else if $topLevel !=null and $rightLevel !=null and $bottomLevel==null and $leftLevel==null {
+        padding: calc(#{$topLevel} * var(--standard-padding)) calc(#{$rightLevel} * var(--standard-padding));
+    }
+    @else {
+        @if $topLevel !=null {
+            padding-top: calc(#{$topLevel} * var(--standard-padding));
+        }
+        @if $rightLevel !=null {
+            padding-right: calc(#{$rightLevel} * var(--standard-padding));
+        }
+        @if $bottomLevel !=null {
+            padding-bottom: calc(#{$bottomLevel} * var(--standard-padding));
+        }
+        @if $leftLevel !=null {
+            padding-left: calc(#{$leftLevel} * var(--standard-padding));
+        }
+    }
+}
+
+@mixin margin($topLevel, $rightLevel: null, $bottomLevel: null, $leftLevel: null) {
+    @if $topLevel !=null and $rightLevel==null and $bottomLevel==null and $leftLevel==null {
+        margin: calc(#{$topLevel} * var(--standard-margin));
+    }
+    @else if $topLevel !=null and $rightLevel !=null and $bottomLevel==null and $leftLevel==null {
+        margin: calc(#{$topLevel} * var(--standard-margin)) calc(#{$rightLevel} * var(--standard-margin));
+    }
+    @else {
+        @if $topLevel !=null {
+            margin-top: calc(#{$topLevel} * var(--standard-margin));
+        }
+        @if $rightLevel !=null {
+            margin-right: calc(#{$rightLevel} * var(--standard-margin));
+        }
+        @if $bottomLevel !=null {
+            margin-bottom: calc(#{$bottomLevel} * var(--standard-margin));
+        }
+        @if $leftLevel !=null {
+            margin-left: calc(#{$leftLevel} * var(--standard-margin));
+        }
+    }
+}

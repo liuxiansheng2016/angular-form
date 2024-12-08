@@ -1,0 +1,24 @@
+@import "../minxins/mixins-border-radius";
+@import "../minxins/mixins-margin-padding";
+.btn {
+    width: 100%;
+    @include border-radius(2);
+    @include padding(1);
+    @include margin(2, 0, 0, 0);
+    outline: none;
+    cursor: pointer;
+    &-primary {
+        background-color: var(--button-primary-background-color);
+        color: var(--button-primary-text-color);
+        border: 1px solid var(--button-primary-text-color);
+        &:hover:not(:focus) {
+            background-color: var(--button-primary-background-color-hover);
+            border: 1px solid var(--button-primary-background-color-hover);
+        }
+        &:active {
+            outline: none;
+            background-color: var(--button-primary-background-color-active);
+            border: 1px solid var(--button-primary-background-color-active);
+        }
+    }
+}

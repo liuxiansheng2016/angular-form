@@ -1,0 +1,36 @@
+:root {
+    --color-primary-rgb: 41, 69, 255;
+    --color-primary: #2945ff;
+    --color-primary-active: #102bdb;
+    --color-primary-hover: #3953ff;
+    --color-white: #fff;
+    --color-gray1: #ccc;
+    --color-gray2: #999;
+    --color-gray3: #666;
+    --color-black: #000;
+    //STANDARD 
+    --standard-margin: 8px;
+    --standard-padding: 8px;
+    --standard-border-radius: 8px;
+    --border-color: var(--color-gray1);
+    //BUTTON  add secondary/nagetive button color if needed
+    --button-primary-background-color: var(--color-primary);
+    --button-primary-background-color-active: var(--color-primary-active);
+    --button-primary-background-color-hover: var(--color-primary-hover);
+    --button-primary-text-color: var( --color-white);
+    --button-primary-disabled: var(--color-gray1);
+    --button-primary-disabled-text: var(--color-primary);
+    --button-border-radius: 0.25;
+    --button-disabled: var(--color-gray2);
+    //FORM FIELDS
+    --form-fields-outline-checkbox: var(--color-primary);
+    --form-fields-background-checkbox-active: var(--color-primary-active);
+    --form-fields-outline-border-primary: var(--color-primary);
+    --form-fields-outline-border-gray: var(--color-gray1);
+    --form-fields-outline-border-gray2: var(--color-gray2);
+    --form-fields-outline-border-hover: var( --color-primary-hover);
+    --form-fields-background-primary: var(--color-primary);
+    --form-fields-label-primary: var(--color-primary);
+    --form-fields-label-gray: var(--color-gray3);
+    --form-fields-label-black: var(--color-black);
+}

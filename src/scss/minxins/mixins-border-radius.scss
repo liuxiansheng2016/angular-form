@@ -1,0 +1,11 @@
+@mixin border-radius($topLeftCornerLevel, $topRightCornerLevel: null, $bottomRightCornerLevel: null, $bottomLeftCornerLevel: null) {
+    @if $topRightCornerLevel==null and $bottomLeftCornerLevel==null and $bottomRightCornerLevel==null {
+        border-radius: calc(#{$topLeftCornerLevel} * var(--standard-border-radius)) !important;
+    }
+    @else if $bottomLeftCornerLevel==null and $bottomRightCornerLevel==null {
+        border-radius: calc(#{$topLeftCornerLevel} * var(--standard-border-radius)) calc(#{$topRightCornerLevel} * var(--standard-border-radius)) !important;
+    }
+    @else {
+        border-radius: calc(#{$topLeftCornerLevel} * var(--standard-border-radius)) calc(#{$topRightCornerLevel} * var(--standard-border-radius)) calc(#{$bottomRightCornerLevel} * var(--standard-border-radius)) calc(#{$bottomLeftCornerLevel} * var(--standard-border-radius)) !important;
+    }
+}

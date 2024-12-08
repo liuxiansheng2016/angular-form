@@ -1,0 +1,36 @@
+@import "../minxins/mixins-margin-padding";
+@import "../minxins/mixins-border-radius";
+.form-select {
+    & {
+        font-size: 16px;
+        font-weight: 500;
+        border: 1px solid var(--form-fields-outline-border-gray);
+        @include border-radius(1);
+        @include padding(1, 2);
+        appearance: none;
+        // Customize the select arrow
+        background-image: url("data:image/svg+xml;utf8,<svg fill='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+        background-repeat: no-repeat;
+        background-position: right 4px center;
+        background-size: 16px;
+    }
+    &:hover {
+        border-color: var(--form-fields-outline-border-gray2);
+    }
+    &:focus {
+        outline: none;
+        border-color: var( --form-fields-outline-border-hover);
+    }
+    &:disabled {
+        color: var(--button-disabled);
+        cursor: not-allowed;
+    }
+    option {
+        font-size: 14px;
+        color: var(--form-fields-label-black);
+        &:checked:not(:disabled) {
+            background-color: var( --form-fields-background-checkbox-active);
+            color: var(--button-primary-text-color);
+        }
+    }
+}
