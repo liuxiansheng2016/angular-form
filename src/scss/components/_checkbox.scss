@@ -26,7 +26,7 @@
             filter: brightness(90%);
         }
         &:focus {
-            border-color: var(--form-fields-outline-checkbox);
+            border-color: var(--form-fields-outline-border-primary);
             outline: 0;
         }
         &:checked {

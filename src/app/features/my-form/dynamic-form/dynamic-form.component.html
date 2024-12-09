@@ -3,6 +3,6 @@
         <ng-container *ngFor="let control of dynamicControls">
             <app-form-field [control]="control" [parentGroup]="dynamicForm"></app-form-field>
         </ng-container>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" [disabled]="disabled">Submit</button>
     </form>
 </div>

@@ -25,12 +25,4 @@
         color: var(--button-disabled);
         cursor: not-allowed;
     }
-    option {
-        font-size: 14px;
-        color: var(--form-fields-label-black);
-        &:checked:not(:disabled) {
-            background-color: var( --form-fields-background-checkbox-active);
-            color: var(--button-primary-text-color);
-        }
-    }
 }

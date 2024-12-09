@@ -16,7 +16,7 @@ export class DynamicFormComponent implements OnInit, OnChanges {
   @Input() jsonData: any = {};
   dynamicForm: FormGroup = new FormGroup({});
   dynamicControls: any[] = [];
-
+  disabled:boolean = true;
   constructor(private fb: FormBuilder) {}
 
   ngOnInit(): void {}
@@ -25,6 +25,7 @@ export class DynamicFormComponent implements OnInit, OnChanges {
     if (
       !changes['jsonData'].firstChange && changes.hasOwnProperty('jsonData') && changes['jsonData'].currentValue
     ) {
+      this.disabled = false;
       this.dynamicControls = this.parseControls(changes['jsonData'].currentValue);
       this.dynamicForm = this.generateForm(changes['jsonData'].currentValue);
     }

@@ -1,0 +1,8 @@
+<div class="accordion-item">
+    <div class="accordion-header" (click)="toggleOpen()">
+        {{ title }}
+    </div>
+    <div class="accordion-body" [class.open]="isOpen">
+        <ng-content></ng-content>
+    </div>
+</div>

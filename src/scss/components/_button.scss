@@ -7,10 +7,12 @@
     @include margin(2, 0, 0, 0);
     outline: none;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
     &-primary {
         background-color: var(--button-primary-background-color);
-        color: var(--button-primary-text-color);
-        border: 1px solid var(--button-primary-text-color);
+        color: var(--text-white-color);
+        border: 1px solid var(--button-primary-background-color);
         &:hover:not(:focus) {
             background-color: var(--button-primary-background-color-hover);
             border: 1px solid var(--button-primary-background-color-hover);
@@ -20,5 +22,12 @@
             background-color: var(--button-primary-background-color-active);
             border: 1px solid var(--button-primary-background-color-active);
         }
+    }
+    &:disabled {
+        color: var(--button-text-disabled);
+        pointer-events: none;
+        background-color: var(--button-background-disabled);
+        border-color: var(--button-border-disabled);
+        opacity: 0.65;
     }
 }
