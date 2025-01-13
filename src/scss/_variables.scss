@@ -11,6 +11,37 @@
     --color-gray4: #eee;
     --color-gray5: #f3f4f7;
     --color-black: #000;
+
+
+    //can be moved to fonts folder
+    --line-height: 1.2;
+    --headline-xlarge-size: 2.4rem;
+    --headline-large-size: 2.0rem;
+    --headline-medium-size: 1.7rem;
+    --headline-small-size: 1.5rem;
+    --headline-xsmall-size: 1.3rem;
+    --headline-font-weight: 600;
+    --headline-letter-spacing: -0.03em;
+  
+    --number-xlarge-size: 5.2rem;
+    --number-large-size: 4.8rem;
+    --number-medium-size: 3.6rem;
+    --number-small-size: 2.4rem;
+    --number-font-weight: 600;
+  
+    --body-large-size: 1.7rem;
+    --body-medium-size: 1.5rem;
+    --body-small-size: 1.3rem;
+    --body-xsmall-size: 1.2rem;
+    --body-letter-spacing: 0em;
+    --body-font-weight: 400;
+    --body-bold-font-weight: 600;
+  
+    --footnote-size: 1.1rem;
+    --label-size: 1.1rem;
+    --group-label-size: 1.2rem;
+    --bottom-nav-title-size: 1.0rem;
+    --input-size: 1.6rem;
     //STANDARD 
     --standard-margin: 8px;
     --standard-padding: 8px;
@@ -41,4 +72,32 @@
     --text-white-color: var(--color-white);
     --text-primary-background-color: var(--color-primary);
     --text-second-background-color: var(--color-second);
+
+    // FONTS
+    --font-headline-color: var(--color-black);
+    --font-body-color: var(--color-grey10);
+    --font-footnote-color: var(--color-grey7);
+    --font-footnote-color-dark: var(--color-grey10);
+    --font-footer-color: var(--color-grey7);
+    --font-primary-color: var(--color-primary);
+    --font-body-color-grey5: var(--color-grey5);
+    --font-body-color-accent: var(--color-accent);
+
+    // NOTIFICATION COLOR
+    --notification-positive-color: var(--color-notification-positive);
+    --notification-warning-color: var(--color-notification-warning);
+    --notification-negative-color: var(--color-notification-negative);
+
+    // HYPERLINKS
+    --hyperlink-color: var(--color-primary);
+    --hyperlink-color-hover: var(--color-primary-hover);
+    --hyperlink-color-active: var(--color-primary-hover);
+
+    // LAYOUT
+    --layout-header-background-color: var(--color-white);
+    --layout-navigation-background-color: var(--color-white);
+    --layout-navigation-mobile-backdrop-color: var(--color-grey-rgb);
+    --layout-content-background-color: var(--color-grey2);
+    --layout-instructional-background-color: rgba(var(--color-primary-rgb), 0.1);
+    --layout-background-color: var(--color-grey1);
 }

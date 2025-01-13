@@ -4,3 +4,55 @@
 @import 'components/checkbox';
 @import 'components/input';
 @import 'components/select';
+  
+//define some commom variables
+.font-primary-color { 
+    color: var(--font-primary-color);
+}
+.bg-color-white {
+    background-color: var(--layout-background-color);
+}
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left !important;
+  }
+  
+  .text-right {
+    text-align: right !important;
+  }
+  
+  .container-content {
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 46em;
+  }
+  
+  .container-content-small {
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 34em;
+  }
+  
+  .container-content-medium {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 34em;
+  }
+  
+  .container-content-inner {
+    padding-left: 0.25%;
+    padding-right: 0.25%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }

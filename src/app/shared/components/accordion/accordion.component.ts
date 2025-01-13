@@ -9,13 +9,4 @@ export class AccordionComponent {
   @ContentChildren(AccordionItemComponent) items!: QueryList<AccordionItemComponent>;
   @Input() multiple = false;
 
-  openItem(index: number): void {
-    this.items.forEach((item, i) => {
-      if (this.multiple || index === i) {
-        item.isOpen = index === i;
-      } else {
-        item.isOpen = false;
-      }
-    });
-  }
 }

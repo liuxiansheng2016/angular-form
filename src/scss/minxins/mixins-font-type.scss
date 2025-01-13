@@ -1,0 +1,56 @@
+@Mixin font-headline-xlarge {
+    font-weight: var(--headline-font-weight);
+    font-size: var(--headline-xlarge-size);
+    letter-spacing: var(--headline-letter-spacing);
+  }
+  
+  @Mixin font-headline-large {
+    font-weight: var(--headline-font-weight);
+    font-size: var(--headline-large-size);
+    letter-spacing: var(--headline-letter-spacing);
+  }
+  
+  @Mixin font-headline-medium {
+    font-weight: var(--headline-font-weight);
+    font-size: var(--headline-medium-size);
+    letter-spacing: var(--headline-letter-spacing);
+  }
+  
+  @Mixin font-headline-small {
+    font-weight: var(--headline-font-weight);
+    font-size: var(--headline-small-size);
+    letter-spacing: var(--headline-letter-spacing);
+  }
+  
+  @Mixin font-headline-xsmall {
+    font-size: var(--headline-xsmall-size);
+    font-weight: var(--headline-font-weight);
+  }
+  
+  @Mixin font-body-large {
+    font-size: var(--body-large-size);
+    font-weight: var(--body-font-weight);
+    letter-spacing: var(--body-letter-spacing);
+  }
+  
+  @Mixin font-body-medium {
+    font-weight: var(--body-font-weight);
+    font-size: var(--body-medium-size);
+    letter-spacing: var(--body-letter-spacing);
+  }
+  
+  @Mixin font-body-small {
+    font-weight: var(--body-font-weight);
+    font-size: var(--body-small-size);
+    letter-spacing: var(--body-letter-spacing);
+  }
+
+  @Mixin font-label {
+    font-weight: var(--body-font-weight);
+    font-size: var(--label-size);
+  }
+  
+  @Mixin font-group-label {
+    font-weight: var(--body-font-weight);
+    font-size: var(--group-label-size);
+  }
